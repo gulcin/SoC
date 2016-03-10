@@ -1,0 +1,1 @@
+cmd_/home/INTRA/guyild/workspace/lab1/task1/hello.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /cad/digilent/scripts/module-common.lds --build-id  -o /home/INTRA/guyild/workspace/lab1/task1/hello.ko /home/INTRA/guyild/workspace/lab1/task1/hello.o /home/INTRA/guyild/workspace/lab1/task1/hello.mod.o

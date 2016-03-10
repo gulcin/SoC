@@ -1,0 +1,1 @@
+cmd_/home/INTRA/guyild/workspace/lab1/task3-2/led2.ko := arm-xilinx-linux-gnueabi-ld -EL -r  -T /cad/digilent/scripts/module-common.lds --build-id  -o /home/INTRA/guyild/workspace/lab1/task3-2/led2.ko /home/INTRA/guyild/workspace/lab1/task3-2/led2.o /home/INTRA/guyild/workspace/lab1/task3-2/led2.mod.o

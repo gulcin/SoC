@@ -28,8 +28,9 @@ static enum modes mode = ON;        // default mode on
 
 static irq_handler_t gpio_irq_handler(unsigned int irq, void *dev_id, struct pt_regs *regs);
 
-//module_param(gpioLED, uint, S_IRUGO);
-//module_param(gpioSW, uint, S_IRUGO);
+// make gpioLED and gpioSW parametric
+module_param(gpioLED, uint, S_IRUGO);
+module_param(gpioSW, uint, S_IRUGO);
  
 // Callback function to display the LED mode
 static ssize_t mode_show(struct  kobject *kobj, struct kobj_attribute *attr, char *buf) {
@@ -90,16 +91,16 @@ static struct task_struct *task;    // pointer to the thread task
 static int blink(void *arg) {
     while(!kthread_should_stop()) {     //returns true when kthread_stop() is called
         set_current_state(TASK_RUNNING);
-        if (swichStatus) {
-		if(mode==BLINK) ledState = !ledState;  // if the mode is blink, then invert LED state
-	        else if(mode==ON) ledState = true;
-        	else ledState = false;
-	        gpio_set_value(gpioLED, ledState); // send the LED state value to the GPIO
-	} else {
-		ledState = false;
-	        gpio_set_value(gpioLED, ledState); // send the LED state value to the GPIO
-	} 
-	set_current_state(TASK_INTERRUPTIBLE);
+    if (swichStatus) {
+        if(mode==BLINK) ledState = !ledState;  // if the mode is blink, then invert LED state
+            else if(mode==ON) ledState = true;
+            else ledState = false;
+            gpio_set_value(gpioLED, ledState); // send the LED state value to the GPIO
+    } else {
+        ledState = false;
+            gpio_set_value(gpioLED, ledState); // send the LED state value to the GPIO
+    } 
+    set_current_state(TASK_INTERRUPTIBLE);
         msleep(period/2);       // sleep half of the period (cycle of on+off is one period)
     }
     return 0;
@@ -146,7 +147,7 @@ static int __init gpio_init(void) {
     }
     gpio_request(gpioSW, "sysfs");          // set up gpio switch
     gpio_direction_input(gpioSW);            // set switch as input
-    gpio_set_debounce(gpioSW, 10000);         // debounce with delay of 200ms
+    gpio_set_debounce(gpioSW, 200);         // debounce with delay of 200ms
     gpio_export(gpioSW, false);             // make it appear in /sys/class/gpio
     printk(KERN_INFO "GPIO_LED: switch currently in state %d\n", gpio_get_value(gpioSW));
 
@@ -178,13 +179,18 @@ static void __exit gpio_exit(void) {
 }
 
 static irq_handler_t gpio_irq_handler(unsigned int irq, void *dev_id, struct pt_regs *regs) {
-        swichStatus  = gpio_get_value(gpioSW); // invert led state
-	if (swichStatus)
-	        gpio_set_value(gpioLED, ledState); // send the LED state value to the GPIO
-	else
-	        gpio_set_value(gpioLED, false); // send the LED state value to the GPIO
+    swichStatus  = gpio_get_value(gpioSW); // obtain the switch state
+   
+    if (swichStatus) { // switch is on
+        if (mode == ON)
+	{gpio_set_value(gpioLED, true);}
+	 else gpio_set_value(gpioLED, ledState); // send the LED state value to the GPIO
+	
+    } else { // switch is off
+        gpio_set_value(gpioLED, false); // turn the LED off
+    }
 
-        return (irq_handler_t) IRQ_HANDLED; // announce that the IRQ has been handled correctly
+    return (irq_handler_t) IRQ_HANDLED; // announce that the IRQ has been handled correctly
 }
 
 module_init(gpio_init);
