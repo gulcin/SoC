@@ -807,3 +807,4 @@ dismissDialog("Launch SDK"); // J:ag (cl:JFrame)
 // HMemoryUtils.trashcanNow. Engine heap size: 5,764 MB. GUI used memory: 94 MB. Current time: 3/11/16 12:35:59 PM EET
 // [GUI Memory]: 138 MB (+1700kb) [01:34:16]
 // HMemoryUtils.trashcanNow. Engine heap size: 5,764 MB. GUI used memory: 93 MB. Current time: 3/11/16 1:05:59 PM EET
+// HMemoryUtils.trashcanNow. Engine heap size: 5,764 MB. GUI used memory: 94 MB. Current time: 3/11/16 1:35:59 PM EET
