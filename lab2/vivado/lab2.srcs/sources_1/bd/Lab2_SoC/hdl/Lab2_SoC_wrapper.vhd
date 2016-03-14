@@ -1,8 +1,8 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
---Date        : Fri Mar 11 11:50:51 2016
---Host        : fx5.pld.ttu.ee running 64-bit openSUSE Leap 42.1 (x86_64)
+--Date        : Mon Mar 14 16:37:21 2016
+--Host        : fx1.pld.ttu.ee running 64-bit openSUSE Leap 42.1 (x86_64)
 --Command     : generate_target Lab2_SoC_wrapper.bd
 --Design      : Lab2_SoC_wrapper
 --Purpose     : IP block netlist
@@ -34,7 +34,7 @@ entity Lab2_SoC_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 )
+    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
 end Lab2_SoC_wrapper;
 
@@ -62,7 +62,7 @@ architecture STRUCTURE of Lab2_SoC_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 )
+    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component Lab2_SoC;
 begin
@@ -89,6 +89,6 @@ Lab2_SoC_i: component Lab2_SoC
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      btns_5bits_tri_i(4 downto 0) => btns_5bits_tri_i(4 downto 0)
+      leds_8bits_tri_o(7 downto 0) => leds_8bits_tri_o(7 downto 0)
     );
 end STRUCTURE;

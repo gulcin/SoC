@@ -2,7 +2,7 @@
    guistr: "# # String gsaved with Nlview 6.4.12  2014-12-16 bk=1.3272 VDI=35 GEI=35 GUI=JA:1.8
 #  -string -flagsOSRD
 preplace port DDR -pg 1 -y 250 -defaultsOSRD
-preplace port btns_5bits -pg 1 -y 130 -defaultsOSRD
+preplace port leds_8bits -pg 1 -y 130 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -y 270 -defaultsOSRD
 preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 90 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 3 -y 130 -defaultsOSRD
@@ -22,6 +22,6 @@ levelinfo -pg 1 0 220 600 860 990
 }
 {
    da_axi4_cnt: "1",
-   da_board_cnt: "1",
+   da_board_cnt: "2",
    da_ps7_cnt: "1",
 }
