@@ -274,6 +274,14 @@
             interrupts = < 0 7 4 >;
             reg = < 0xf8007100 0x20 >;
         };
+
+/*lab2: adding gpio ip into the devicetree*/
+
+	axi_gpio_0: axi_gpio_0@41200000 {
+    	compatible = "xlnx,xps-gpio-1.00.a";
+    	reg = < 0x41200000 0x10000 >;
+    	gpio-controller;    /* Specifies, that the device is a GPIO controller */
+	};
  
     };
 };

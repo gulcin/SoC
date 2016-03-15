@@ -1,8 +1,8 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
---Date        : Fri Mar 11 11:50:51 2016
---Host        : fx5.pld.ttu.ee running 64-bit openSUSE Leap 42.1 (x86_64)
+--Date        : Mon Mar 14 16:37:21 2016
+--Host        : fx1.pld.ttu.ee running 64-bit openSUSE Leap 42.1 (x86_64)
 --Command     : generate_target Lab2_SoC.bd
 --Design      : Lab2_SoC
 --Purpose     : IP block netlist
@@ -599,10 +599,10 @@ entity Lab2_SoC is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    btns_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 )
+    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Lab2_SoC : entity is "Lab2_SoC,IP_Integrator,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Lab2_SoC,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,da_axi4_cnt=1,da_board_cnt=1,da_ps7_cnt=1,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of Lab2_SoC : entity is "Lab2_SoC,IP_Integrator,{x_ipProduct=Vivado 2015.1,x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Lab2_SoC,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,da_axi4_cnt=1,da_board_cnt=2,da_ps7_cnt=1,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of Lab2_SoC : entity is "Lab2_SoC.hwdef";
 end Lab2_SoC;
@@ -711,7 +711,7 @@ architecture STRUCTURE of Lab2_SoC is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    gpio_io_i : in STD_LOGIC_VECTOR ( 4 downto 0 )
+    gpio_io_o : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component Lab2_SoC_axi_gpio_0_0;
   component Lab2_SoC_rst_processing_system7_0_100M_0 is
@@ -730,7 +730,7 @@ architecture STRUCTURE of Lab2_SoC is
   end component Lab2_SoC_rst_processing_system7_0_100M_0;
   signal GND_1 : STD_LOGIC;
   signal VCC_1 : STD_LOGIC;
-  signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 4 downto 0 );
+  signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -830,7 +830,7 @@ architecture STRUCTURE of Lab2_SoC is
   signal NLW_rst_processing_system7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_processing_system7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
 begin
-  axi_gpio_0_GPIO_TRI_I(4 downto 0) <= btns_5bits_tri_i(4 downto 0);
+  leds_8bits_tri_o(7 downto 0) <= axi_gpio_0_GPIO_TRI_O(7 downto 0);
 GND: unisim.vcomponents.GND
      port map (
       G => GND_1
@@ -841,7 +841,7 @@ VCC: unisim.vcomponents.VCC
     );
 axi_gpio_0: component Lab2_SoC_axi_gpio_0_0
      port map (
-      gpio_io_i(4 downto 0) => axi_gpio_0_GPIO_TRI_I(4 downto 0),
+      gpio_io_o(7 downto 0) => axi_gpio_0_GPIO_TRI_O(7 downto 0),
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => processing_system7_0_axi_periph_M00_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_processing_system7_0_100M_peripheral_aresetn(0),

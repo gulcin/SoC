@@ -1,2 +1,4 @@
+activeuserprofiles=Team;fx1;fx5
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=INTRA\\guyild
+useridperkey=fx5.Local\=INTRA\\guyild;

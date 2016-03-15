@@ -1,0 +1,1 @@
+cmd_arch/arm/boot/uImage := /bin/sh /cad/digilent/scripts/mkuboot.sh -A arm -O linux -C none  -T kernel -a 0x8000 -e 0x8000 -n 'Linux-3.6.0-digilent-13.01' -d arch/arm/boot/zImage arch/arm/boot/uImage
