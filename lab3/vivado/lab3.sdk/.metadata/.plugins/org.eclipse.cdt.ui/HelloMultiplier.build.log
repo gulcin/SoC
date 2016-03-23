@@ -1,0 +1,6 @@
+14:41:54 **** Incremental Build of configuration Debug for project HelloMultiplier ****
+make all 
+make: Nothing to be done for 'all'.
+
+14:41:54 Build Finished (took 93ms)
+

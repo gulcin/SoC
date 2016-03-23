@@ -1,8 +1,8 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
---Date        : Tue Mar 15 13:24:56 2016
---Host        : fx5.pld.ttu.ee running 64-bit openSUSE Leap 42.1 (x86_64)
+--Date        : Mon Mar 21 12:38:38 2016
+--Host        : fx1.pld.ttu.ee running 64-bit openSUSE Leap 42.1 (x86_64)
 --Command     : generate_target Lab3.bd
 --Design      : Lab3
 --Purpose     : IP block netlist
@@ -702,6 +702,20 @@ architecture STRUCTURE of Lab3 is
     PS_PORB : inout STD_LOGIC
   );
   end component Lab3_processing_system7_0_0;
+  component Lab3_rst_processing_system7_0_100M_0 is
+  port (
+    slowest_sync_clk : in STD_LOGIC;
+    ext_reset_in : in STD_LOGIC;
+    aux_reset_in : in STD_LOGIC;
+    mb_debug_sys_rst : in STD_LOGIC;
+    dcm_locked : in STD_LOGIC;
+    mb_reset : out STD_LOGIC;
+    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component Lab3_rst_processing_system7_0_100M_0;
   component Lab3_MYMULTIPLIER_0_0 is
   port (
     multiplier_rdy_irq_out : out STD_LOGIC;
@@ -728,20 +742,6 @@ architecture STRUCTURE of Lab3 is
     s00_axi_aresetn : in STD_LOGIC
   );
   end component Lab3_MYMULTIPLIER_0_0;
-  component Lab3_rst_processing_system7_0_100M_0 is
-  port (
-    slowest_sync_clk : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
-    aux_reset_in : in STD_LOGIC;
-    mb_debug_sys_rst : in STD_LOGIC;
-    dcm_locked : in STD_LOGIC;
-    mb_reset : out STD_LOGIC;
-    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component Lab3_rst_processing_system7_0_100M_0;
   signal GND_1 : STD_LOGIC;
   signal MYMULTIPLIER_0_multiplier_rdy_irq_out : STD_LOGIC;
   signal VCC_1 : STD_LOGIC;

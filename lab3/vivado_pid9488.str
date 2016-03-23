@@ -938,3 +938,4 @@ selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Lab3, launch_runs 
 selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/ip/Lab3_processing_system7_0_0/synth/Lab3_processing_system7_0_0.v:349]. ]", 7, false); // ae:k (JViewport:JComponent, cl:JFrame)
 selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false); // ae:k (JViewport:JComponent, cl:JFrame)
 selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 12, false); // ae:k (JViewport:JComponent, cl:JFrame)
+// [GUI Memory]: 135 MB (+5kb) [02:08:54]

@@ -1,8 +1,8 @@
 --Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2015.1 (lin64) Build 1215546 Mon Apr 27 19:07:21 MDT 2015
---Date        : Tue Mar 15 13:24:56 2016
---Host        : fx5.pld.ttu.ee running 64-bit openSUSE Leap 42.1 (x86_64)
+--Date        : Mon Mar 21 12:38:38 2016
+--Host        : fx1.pld.ttu.ee running 64-bit openSUSE Leap 42.1 (x86_64)
 --Command     : generate_target Lab3_wrapper.bd
 --Design      : Lab3_wrapper
 --Purpose     : IP block netlist

@@ -16,9 +16,9 @@ Command: synth_design -top Lab3_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -75 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -81 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 978.129 ; gain = 181.996 ; free physical = 10734 ; free virtual = 14909
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 978.129 ; gain = 181.996 ; free physical = 10722 ; free virtual = 15130
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Lab3_wrapper' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:40]
 INFO: [Synth 8-3491] module 'Lab3' declared at '/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/hdl/Lab3.vhd:591' bound to instance 'Lab3_i' of component 'Lab3' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:67]
@@ -29,28 +29,28 @@ INFO: [Synth 8-638] synthesizing module 'Lab3_MYMULTIPLIER_0_0' [/home/INTRA/guy
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter size_of_multiplier_input bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'MYMULTIPLIER_v1_0' declared at '/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0.vhd:5' bound to instance 'U0' of component 'MYMULTIPLIER_v1_0' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/ip/Lab3_MYMULTIPLIER_0_0/synth/Lab3_MYMULTIPLIER_0_0.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'MYMULTIPLIER_v1_0' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0.vhd:49]
+INFO: [Synth 8-3491] module 'MYMULTIPLIER_v1_0' declared at '/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0.vhd:5' bound to instance 'U0' of component 'MYMULTIPLIER_v1_0' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/ip/Lab3_MYMULTIPLIER_0_0/synth/Lab3_MYMULTIPLIER_0_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'MYMULTIPLIER_v1_0' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0.vhd:49]
 	Parameter size_of_multiplier_input bound to: 16 - type: integer 
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter size_of_multiplier_input bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'MYMULTIPLIER_v1_0_S00_AXI' declared at '/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:5' bound to instance 'MYMULTIPLIER_v1_0_S00_AXI_inst' of component 'MYMULTIPLIER_v1_0_S00_AXI' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'MYMULTIPLIER_v1_0_S00_AXI' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-3491] module 'MYMULTIPLIER_v1_0_S00_AXI' declared at '/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:5' bound to instance 'MYMULTIPLIER_v1_0_S00_AXI_inst' of component 'MYMULTIPLIER_v1_0_S00_AXI' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'MYMULTIPLIER_v1_0_S00_AXI' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:86]
 	Parameter size_of_multiplier_input bound to: 16 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:234]
-INFO: [Synth 8-226] default block is never used [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:364]
+INFO: [Synth 8-226] default block is never used [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:234]
+INFO: [Synth 8-226] default block is never used [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:364]
 	Parameter size bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'MULTIPLIERENTITY' declared at '/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/multiplier.vhd:6' bound to instance 'multiplier_0' of component 'MULTIPLIERENTITY' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:398]
-INFO: [Synth 8-638] synthesizing module 'MULTIPLIERENTITY' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/multiplier.vhd:21]
+INFO: [Synth 8-3491] module 'MULTIPLIERENTITY' declared at '/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/multiplier.vhd:6' bound to instance 'multiplier_0' of component 'MULTIPLIERENTITY' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:398]
+INFO: [Synth 8-638] synthesizing module 'MULTIPLIERENTITY' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/multiplier.vhd:21]
 	Parameter size bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MULTIPLIERENTITY' (1#1) [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/multiplier.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'MYMULTIPLIER_v1_0_S00_AXI' (2#1) [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:86]
-INFO: [Synth 8-256] done synthesizing module 'MYMULTIPLIER_v1_0' (3#1) [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/f736a488/hdl/MYMULTIPLIER_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'MULTIPLIERENTITY' (1#1) [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/multiplier.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'MYMULTIPLIER_v1_0_S00_AXI' (2#1) [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'MYMULTIPLIER_v1_0' (3#1) [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/user.org/mymultiplier_v1_0/1aab925c/hdl/MYMULTIPLIER_v1_0.vhd:49]
 INFO: [Synth 8-256] done synthesizing module 'Lab3_MYMULTIPLIER_0_0' (4#1) [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/ip/Lab3_MYMULTIPLIER_0_0/synth/Lab3_MYMULTIPLIER_0_0.vhd:83]
 INFO: [Synth 8-113] binding component instance 'VCC' to cell 'VCC' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/hdl/Lab3.vhd:878]
 INFO: [Synth 8-3491] module 'Lab3_processing_system7_0_0' declared at '/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/ip/Lab3_processing_system7_0_0/synth/Lab3_processing_system7_0_0.v:57' bound to instance 'processing_system7_0' of component 'Lab3_processing_system7_0_0' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/hdl/Lab3.vhd:882]
@@ -925,7 +925,7 @@ INFO: [Synth 8-256] done synthesizing module 'Lab3_rst_processing_system7_0_100M
 INFO: [Synth 8-256] done synthesizing module 'Lab3' (36#1) [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/hdl/Lab3.vhd:621]
 INFO: [Synth 8-256] done synthesizing module 'Lab3_wrapper' (37#1) [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/bd/Lab3/hdl/Lab3_wrapper.vhd:40]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1101.418 ; gain = 305.285 ; free physical = 10610 ; free virtual = 14774
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1101.418 ; gain = 305.285 ; free physical = 10609 ; free virtual = 15004
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -935,7 +935,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1101.418 ; gain = 305.285 ; free physical = 10610 ; free virtual = 14774
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1101.418 ; gain = 305.285 ; free physical = 10610 ; free virtual = 15004
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -963,16 +963,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1336.426 ; gain = 0.000 ; free physical = 10442 ; free virtual = 14645
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1336.426 ; gain = 0.000 ; free physical = 10450 ; free virtual = 14883
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1336.430 ; gain = 540.297 ; free physical = 10436 ; free virtual = 14639
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1336.430 ; gain = 540.297 ; free physical = 10446 ; free virtual = 14879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10436 ; free virtual = 14639
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10446 ; free virtual = 14879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -985,15 +985,13 @@ Applied set_property DONT_TOUCH = true for Lab3_i/processing_system7_0_axi_perip
 Applied set_property DONT_TOUCH = true for Lab3_i/processing_system7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Lab3_i/rst_processing_system7_0_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10436 ; free virtual = 14639
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10446 ; free virtual = 14879
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5544] ROM "ans_ready_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ans_ready_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "a_store" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/066de7cd/hdl/src/vhdl/sequence.vhd:222]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10426 ; free virtual = 14629
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10433 ; free virtual = 14865
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1006,19 +1004,18 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 6     
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 3     
 	   2 Input      5 Bit       Adders := 4     
-	   2 Input      4 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 4     
 	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
 	               66 Bit    Registers := 4     
 	               47 Bit    Registers := 2     
-	               32 Bit    Registers := 7     
+	               32 Bit    Registers := 6     
 	               16 Bit    Registers := 1     
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 7     
@@ -1026,29 +1023,27 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 2     
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 4     
-	                4 Bit    Registers := 9     
+	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 3     
-	                2 Bit    Registers := 13    
-	                1 Bit    Registers := 48    
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 50    
 +---Muxes : 
 	   2 Input     66 Bit        Muxes := 4     
 	   2 Input     47 Bit        Muxes := 2     
-	   4 Input     32 Bit        Muxes := 7     
-	   2 Input     32 Bit        Muxes := 12    
-	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 13    
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
 	   2 Input     14 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 4     
 	   2 Input      9 Bit        Muxes := 4     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 4     
-	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 18    
-	   4 Input      2 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 33    
-	   5 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 38    
+	   3 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1058,24 +1053,15 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module MULTIPLIERENTITY 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 3     
+	               32 Bit    Registers := 2     
 	               16 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 3     
-	   2 Input     32 Bit        Muxes := 1     
-	   4 Input     16 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
 Module MYMULTIPLIER_v1_0_S00_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1256,16 +1242,16 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10426 ; free virtual = 14629
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10433 ; free virtual = 14865
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/INTRA/guyild/workspace/lab3/vivado/lab3.srcs/sources_1/ipshared/xilinx.com/axi_register_slice_v2_1/03a8e0ba/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10426 ; free virtual = 14629
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10432 ; free virtual = 14865
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10426 ; free virtual = 14629
+Finished Parallel Reinference  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10432 ; free virtual = 14865
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1276,16 +1262,16 @@ Report RTL Partitions:
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10410 ; free virtual = 14613
+Finished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10416 ; free virtual = 14849
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10410 ; free virtual = 14613
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10416 ; free virtual = 14849
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10410 ; free virtual = 14613
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1337.426 ; gain = 541.293 ; free physical = 10416 ; free virtual = 14849
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -1293,10 +1279,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1491.426 ; gain = 695.293 ; free physical = 10205 ; free virtual = 14415
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1490.426 ; gain = 694.293 ; free physical = 10216 ; free virtual = 14657
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1509.434 ; gain = 713.301 ; free physical = 10186 ; free virtual = 14397
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1508.434 ; gain = 712.301 ; free physical = 10197 ; free virtual = 14639
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1342,7 +1328,7 @@ INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/G
 INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5 ) is unused and will be removed from module Lab3_rst_processing_system7_0_100M_0.
 INFO: [Synth 8-3332] Sequential element (\U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6 ) is unused and will be removed from module Lab3_rst_processing_system7_0_100M_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1526.449 ; gain = 730.316 ; free physical = 10170 ; free virtual = 14380
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1524.449 ; gain = 728.316 ; free physical = 10182 ; free virtual = 14623
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1382,7 +1368,7 @@ INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axili
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1526.449 ; gain = 730.316 ; free physical = 10170 ; free virtual = 14380
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1524.449 ; gain = 728.316 ; free physical = 10182 ; free virtual = 14623
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1395,7 +1381,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1526.449 ; gain = 730.316 ; free physical = 10170 ; free virtual = 14380
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1524.449 ; gain = 728.316 ; free physical = 10182 ; free virtual = 14623
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1407,13 +1393,13 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1526.449 ; gain = 730.316 ; free physical = 10170 ; free virtual = 14380
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1524.449 ; gain = 728.316 ; free physical = 10182 ; free virtual = 14623
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1526.449 ; gain = 730.316 ; free physical = 10170 ; free virtual = 14380
+Start Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1524.449 ; gain = 728.316 ; free physical = 10182 ; free virtual = 14623
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1526.449 ; gain = 730.316 ; free physical = 10170 ; free virtual = 14380
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1524.449 ; gain = 728.316 ; free physical = 10182 ; free virtual = 14623
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1427,8 +1413,6 @@ Dynamic Shift Register:
 |dsrl__1     | memory_reg[3]  | 4      | 2          | 2      | 0       | 0      | 0      | 0      | 
 |dsrl__2     | memory_reg[31] | 32     | 34         | 0      | 34      | 0      | 0      | 0      | 
 |dsrl__3     | memory_reg[31] | 32     | 13         | 0      | 13      | 0      | 0      | 0      | 
-|dsrl__4     | memory_reg[3]  | 4      | 20         | 20     | 0       | 0      | 0      | 0      | 
-|dsrl__5     | memory_reg[3]  | 4      | 2          | 2      | 0       | 0      | 0      | 0      | 
 +------------+----------------+--------+------------+--------+---------+--------+--------+--------+
 
 ---------------------------------------------------------------------------------
@@ -1450,37 +1434,36 @@ Report Cell Usage:
 +------+--------+------+
 |1     |BIBUF   |   130|
 |2     |BUFG    |     1|
-|3     |CARRY4  |    20|
+|3     |CARRY4  |    12|
 |4     |GND     |     1|
 |5     |LUT1    |   154|
-|6     |LUT2    |    65|
-|7     |LUT3    |   286|
-|8     |LUT4    |    63|
-|9     |LUT5    |   267|
-|10    |LUT6    |   137|
-|11    |MUXCY_L |    22|
+|6     |LUT2    |    68|
+|7     |LUT3    |   256|
+|8     |LUT4    |    93|
+|9     |LUT5    |    99|
+|10    |LUT6    |   263|
+|11    |MUXCY_L |    53|
 |12    |PS7     |     1|
 |13    |SRL16   |     1|
 |14    |SRL16E  |    22|
 |15    |SRLC32E |    47|
 |16    |VCC     |     1|
-|17    |XORCY   |    24|
-|18    |FDCE    |     2|
-|19    |FDR     |     8|
-|20    |FDRE    |   841|
-|21    |FDSE    |    67|
+|17    |XORCY   |    56|
+|18    |FDR     |     8|
+|19    |FDRE    |   837|
+|20    |FDSE    |    67|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+---------------------------------------------------+------------------------------------------------------------+------+
 |      |Instance                                           |Module                                                      |Cells |
 +------+---------------------------------------------------+------------------------------------------------------------+------+
-|1     |top                                                |                                                            |  2160|
-|2     |  Lab3_i                                           |Lab3                                                        |  2160|
-|3     |    MYMULTIPLIER_0                                 |Lab3_MYMULTIPLIER_0_0                                       |   536|
-|4     |      U0                                           |MYMULTIPLIER_v1_0                                           |   536|
-|5     |        MYMULTIPLIER_v1_0_S00_AXI_inst             |MYMULTIPLIER_v1_0_S00_AXI                                   |   536|
-|6     |          multiplier_0                             |MULTIPLIERENTITY                                            |   288|
+|1     |top                                                |                                                            |  2170|
+|2     |  Lab3_i                                           |Lab3                                                        |  2170|
+|3     |    MYMULTIPLIER_0                                 |Lab3_MYMULTIPLIER_0_0                                       |   546|
+|4     |      U0                                           |MYMULTIPLIER_v1_0                                           |   546|
+|5     |        MYMULTIPLIER_v1_0_S00_AXI_inst             |MYMULTIPLIER_v1_0_S00_AXI                                   |   546|
+|6     |          multiplier_0                             |MULTIPLIERENTITY                                            |   302|
 |7     |    processing_system7_0                           |Lab3_processing_system7_0_0                                 |   244|
 |8     |      inst                                         |processing_system7_v5_5_processing_system7                  |   244|
 |9     |    processing_system7_0_axi_periph                |Lab3_processing_system7_0_axi_periph_0                      |  1310|
@@ -1518,25 +1501,25 @@ Report Instance Areas:
 |41    |          SEQ_COUNTER                              |upcnt_n                                                     |    14|
 +------+---------------------------------------------------+------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1526.449 ; gain = 730.316 ; free physical = 10170 ; free virtual = 14380
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1524.449 ; gain = 728.316 ; free physical = 10182 ; free virtual = 14623
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1526.449 ; gain = 367.312 ; free physical = 10170 ; free virtual = 14380
-Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1526.449 ; gain = 730.316 ; free physical = 10170 ; free virtual = 14380
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1524.449 ; gain = 365.312 ; free physical = 10182 ; free virtual = 14623
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1524.449 ; gain = 728.316 ; free physical = 10182 ; free virtual = 14623
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 15 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 6 instances
+  A total of 23 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 14 instances
   FDR => FDRE: 8 instances
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-208 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+206 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1527.449 ; gain = 606.316 ; free physical = 10166 ; free virtual = 14380
-report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1558.469 ; gain = 0.000 ; free physical = 10164 ; free virtual = 14378
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 15 13:25:59 2016...
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1525.449 ; gain = 604.316 ; free physical = 10179 ; free virtual = 14623
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1556.469 ; gain = 0.000 ; free physical = 10176 ; free virtual = 14621
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 21 12:39:39 2016...

@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  25848	   1928	  22596	  50372	   c4c4	HelloIRQ_bsp_xscugic_example_1.elf
